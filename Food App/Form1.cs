@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -45,12 +46,10 @@ namespace Food_App
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            WindowState = FormWindowState.Normal;
-            if (WindowState == FormWindowState.Normal)
-            {
-                ShowInTaskbar = true;
-                notifyIcon1.Visible = false;
-            }
+            if (this.WindowState == FormWindowState.Minimized)
+                this.WindowState = FormWindowState.Normal;
+            ShowInTaskbar = true;
+            notifyIcon1.Visible = false;
         }
 
         private void FirstForm_SizeChanged(object sender, EventArgs e)
@@ -58,8 +57,11 @@ namespace Food_App
             bool MousePointerNotOnTaskBar = Screen.GetWorkingArea(this).Contains(Cursor.Position);
             if (WindowState == FormWindowState.Minimized && MousePointerNotOnTaskBar)
             {
+                FoodManager foodManager = new FoodManager();
+                foodManager.SetAll(GetAllNamesFromFile(), GetAllDatesfromfile());
                 ShowInTaskbar = false;
                 notifyIcon1.Visible = true;
+                notifyIcon1.BalloonTipText = "some product expire";
             }
         }
 
