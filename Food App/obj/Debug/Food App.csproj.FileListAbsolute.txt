@@ -10,3 +10,15 @@ C:\Users\volfi\source\repos\Food App\Food App\obj\Debug\Food App.exe
 C:\Users\volfi\source\repos\Food App\Food App\obj\Debug\Food App.pdb
 C:\Users\volfi\source\repos\Food App\Food App\obj\Debug\Food_App.AddProduct.resources
 C:\Users\volfi\source\repos\Food App\Food App\obj\Debug\Food_App.TextForm.resources
+C:\projects\food manager v2\Food App\bin\Debug\Food App.exe.config
+C:\projects\food manager v2\Food App\bin\Debug\Food App.exe
+C:\projects\food manager v2\Food App\bin\Debug\Food App.pdb
+C:\projects\food manager v2\Food App\obj\Debug\Food App.csprojAssemblyReference.cache
+C:\projects\food manager v2\Food App\obj\Debug\Food_App.AddProduct.resources
+C:\projects\food manager v2\Food App\obj\Debug\Food_App.Form1.resources
+C:\projects\food manager v2\Food App\obj\Debug\Food_App.Properties.Resources.resources
+C:\projects\food manager v2\Food App\obj\Debug\Food_App.TextForm.resources
+C:\projects\food manager v2\Food App\obj\Debug\Food App.csproj.GenerateResource.cache
+C:\projects\food manager v2\Food App\obj\Debug\Food App.csproj.CoreCompileInputs.cache
+C:\projects\food manager v2\Food App\obj\Debug\Food App.exe
+C:\projects\food manager v2\Food App\obj\Debug\Food App.pdb
