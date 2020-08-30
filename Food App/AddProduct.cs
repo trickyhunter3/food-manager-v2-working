@@ -38,14 +38,18 @@ namespace Food_App
                 System.IO.File.AppendAllText(@"C:\FoodManager\FoodName.txt",
                     textBox1.Text + Environment.NewLine);
 
-                label3.Text = "Registered: " + textBox1.Text + " " + textBox2.Text;
+                label3.Text = "Registered: " + textBox1.Text + " " + dateTime.Month;
             }
             else
                 label3.Text = "Failed to register check Date format";
         }
         private bool DateFromatValid()
         {
-            return DateTime.TryParse(textBox2.Text, out DateTime result);
+            char separator = Convert.ToChar(textBox2.Text[textBox2.Text.Length - 5]);
+            string[] date = textBox2.Text.Split(separator);
+            string dateTime = date[2] + separator + date[1] +
+                separator + date[0];
+            return DateTime.TryParse(dateTime, out DateTime result);
         }
         public DateTime GetDateFromatChange()
         {
