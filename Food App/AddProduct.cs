@@ -38,7 +38,7 @@ namespace Food_App
                 System.IO.File.AppendAllText(@"C:\FoodManager\FoodName.txt",
                     textBox1.Text + Environment.NewLine);
 
-                label3.Text = "Registered: " + textBox1.Text + " " + dateTime.Month;
+                label3.Text = "Registered: " + textBox1.Text + " " + textBox2.Text;
             }
             else
                 label3.Text = "Failed to register check Date format";
